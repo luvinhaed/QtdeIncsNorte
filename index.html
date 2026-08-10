@@ -138,7 +138,7 @@ footer{
 
     <footer>
       <span>Fonte: arquivo de dados no repositório GitHub</span>
-      <span id="pollInfo">Atualiza a cada 15 seg</span>
+      <span id="pollInfo">Atualiza a cada 30 seg</span>
     </footer>
 
   </div>
@@ -302,7 +302,8 @@ function render(data){
 
 async function fetchData(){
   try{
-    const res = await fetch(DATA_PATH, {cache:'no-store'});
+    const url = `${DATA_PATH}?t=${Date.now()}`;
+    const res = await fetch(url, {cache:'no-store'});
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     render(data);
