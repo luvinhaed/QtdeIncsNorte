@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Despacho · Incidências Ativas por Polo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f6;
+  --card:#ffffff;
+  --line:#d8e1ea;
+  --line-soft:#e9eff5;
+  --text:#102131;
+  --muted:#66798d;
+  --shadow:0 10px 28px rgba(15,23,42,.08);
+  --radius:18px;
+  --green:#16a34a;
+  --red:#dc2626;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,#f8fafc 0%,var(--bg) 100%);
+}
+.page-shell{width:min(1100px,100%);margin:0 auto;padding:12px;display:flex;flex-direction:column;gap:12px;min-height:100vh}
+.card{
+  background:var(--card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.header-card{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:16px; padding:12px 16px; flex:0 0 auto;
+}
+.eyebrow{
+  font-size:10px; font-weight:800; letter-spacing:.14em;
+  text-transform:uppercase; color:#73859a; margin-bottom:3px;
+}
+#page-title{
+  margin:0; font-size:clamp(18px,1.6vw,26px); line-height:1.2;
+  font-weight:800; color:#18324d; display:flex; align-items:center; gap:12px;
+}
+.header-right{display:flex; align-items:center; gap:18px}
+.live-pill{
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:11px; font-weight:800; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--green); background:rgba(22,163,74,.1);
+  border:1px solid rgba(22,163,74,.25); padding:5px 11px; border-radius:999px;
+}
+.live-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2.2s ease-in-out infinite}
+.live-pill.erro{color:var(--red); background:rgba(220,38,38,.1); border-color:rgba(220,38,38,.25)}
+.live-pill.erro .dot{background:var(--red)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.header-info{
+  min-width:200px; padding:8px 12px; border:1px solid var(--line); border-radius:14px;
+  background:linear-gradient(180deg,#fbfdff 0%,#f3f7fb 100%); text-align:right;
+}
+.header-label{
+  font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:#708296; margin-bottom:3px;
+}
+.header-value{font-size:15px;font-weight:800;color:#10243d;font-variant-numeric:tabular-nums}
+#errorBanner{
+  display:none; flex:0 0 auto;
+  background:#fef2f2; color:#991b1b; border:1px solid #fecaca;
+  border-radius:14px; padding:10px 16px; font-size:13px; font-weight:600;
+}
+.panel-card{display:flex; flex-direction:column; overflow:hidden}
+.section-head{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  padding:14px 18px; background:linear-gradient(180deg,#fbfdff 0%,#f4f8fc 100%);
+  border-bottom:1px solid var(--line-soft);
+}
+.section-title{
+  font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#264766;
+}
+.section-total{font-size:12px;font-weight:700;color:var(--muted)}
+.chart-wrap{padding:18px; height:460px; position:relative}
+#chartSvg{width:100%;height:100%;display:block}
+.legend-row{
+  display:flex; gap:18px; flex-wrap:wrap; justify-content:center;
+  padding:0 18px 18px; font-size:12px; font-weight:700; color:#36485c;
+}
+.legend-item{display:inline-flex; align-items:center; gap:6px}
+.legend-dot{width:11px;height:11px;border-radius:50%}
+.empty-state{padding:40px;color:#6b8097;text-align:center}
+.empty-state .big{font-weight:800;color:#18324d;margin-bottom:4px}
+footer{
+  flex:0 0 auto; display:flex; justify-content:space-between;
+  font-size:11px; color:var(--muted); padding:0 4px;
+}
+@media (max-width:700px){
+  .header-card{flex-direction:column;align-items:flex-start}
+  .header-right{width:100%;justify-content:space-between}
+  .chart-wrap{height:360px}
+}
+</style>
+</head>
+<body>
+  <div class="page-shell">
+
+    <header class="header-card card">
+      <div class="header-left">
+        <div class="eyebrow">Acompanhamento NORTE</div>
+        <h1 id="page-title">Incidências Ativas por Polo</h1>
+      </div>
+      <div class="header-right">
+        <div class="live-pill" id="livePill"><span class="dot"></span><span id="statusText">conectando…</span></div>
+        <div class="header-info">
+          <div class="header-label">Última atualização dos dados</div>
+          <div class="header-value" id="updatedAt">—</div>
+        </div>
+      </div>
+    </header>
+
+    <div id="errorBanner"></div>
+
+    <section class="card panel-card">
+      <div class="section-head">
+        <div class="section-title">Quantidade de incidências por polo / nível de tensão</div>
+        <div class="section-total" id="totalCount">0 incidências</div>
+      </div>
+      <div class="chart-wrap">
+        <svg id="chartSvg" viewBox="0 0 900 420" preserveAspectRatio="xMidYMid meet"></svg>
+        <div id="emptyState" class="empty-state" style="display:none">
+          <div class="big">Carregando dados…</div>Primeira coleta em andamento
+        </div>
+      </div>
+      <div class="legend-row" id="legendRow"></div>
+    </section>
+
+    <footer>
+      <span>Fonte: arquivo de dados no repositório GitHub</span>
+      <span id="pollInfo">Atualiza a cada 15 seg</span>
+    </footer>
+
+  </div>
+
+<script>
+const DATA_PATH = './data.json';
+const SERIES_STYLE = {
+  'AT': '#B22222',
+  'MT TRONCO': '#FF8C00',
+  'MT RAMAL': '#9ACD32',
+  'BT': '#6A5ACD',
+};
+const SERIES_ORDER = ['AT', 'MT TRONCO', 'MT RAMAL', 'BT'];
+
+function colorFor(name){
+  return SERIES_STYLE[name] || '#999999';
+}
+
+function buildDatasets(seriesFromApi, categoryCount){
+  const byName = {};
+  (seriesFromApi || []).forEach(s => { byName[s.name] = s.data || []; });
+
+  const names = [...SERIES_ORDER];
+  const extras = Object.keys(byName).filter(n => !SERIES_ORDER.includes(n));
+  const finalOrder = names.concat(extras);
+
+  return finalOrder.map(name => ({
+    label: name,
+    data: Array.from({ length: categoryCount || 0 }, (_, idx) => byName[name]?.[idx] || 0),
+    backgroundColor: colorFor(name),
+  }));
+}
+
+function renderLegend(datasets){
+  const row = document.getElementById('legendRow');
+  row.innerHTML = datasets.map(d => `
+    <span class="legend-item">
+      <span class="legend-dot" style="background:${d.backgroundColor}"></span>
+      ${d.label}
+    </span>
+  `).join('');
+}
+
+function escapeHtml(value){
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\"/g, '&quot;');
+}
+
+function renderChart(categories, datasets){
+  const svg = document.getElementById('chartSvg');
+  const width = 900;
+  const height = 420;
+  const margin = { top: 24, right: 24, bottom: 74, left: 58 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+
+  const totals = categories.map((_, idx) =>
+    datasets.reduce((sum, ds) => sum + (ds.data[idx] || 0), 0)
+  );
+  const maxValue = Math.max(1, ...totals);
+  const yMax = Math.ceil(maxValue * 1.1);
+
+  const groupWidth = categories.length ? innerWidth / categories.length : innerWidth;
+  const barWidth = Math.min(66, Math.max(28, groupWidth * 0.64));
+
+  const gridLines = [];
+  const yLabels = [];
+  for (let i = 0; i <= 4; i += 1) {
+    const value = Math.round(yMax - (yMax * i) / 4);
+    const y = margin.top + (innerHeight * i) / 4;
+    gridLines.push(`<line x1="${margin.left}" y1="${y}" x2="${width - margin.right}" y2="${y}" stroke="#e7edf4" stroke-width="1" />`);
+    yLabels.push(`<text x="${margin.left - 10}" y="${y + 4}" text-anchor="end" font-size="11" fill="#708296">${value}</text>`);
+  }
+
+  const baselineY = margin.top + innerHeight;
+  const axisLine = `<line x1="${margin.left}" y1="${baselineY}" x2="${width - margin.right}" y2="${baselineY}" stroke="#93a2b4" stroke-width="1.5" />`;
+
+  const bars = [];
+  const categoryLabels = [];
+
+  categories.forEach((category, categoryIndex) => {
+    const x = margin.left + categoryIndex * groupWidth + (groupWidth - barWidth) / 2;
+    let stackedHeight = 0;
+    const total = totals[categoryIndex];
+
+    datasets.forEach(ds => {
+      const value = ds.data[categoryIndex] || 0;
+      if (!value) return;
+      const barHeight = (value / yMax) * innerHeight;
+      const y = baselineY - stackedHeight - barHeight;
+      stackedHeight += barHeight;
+      bars.push(`<rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="${ds.backgroundColor}" rx="5" ry="5" />`);
+    });
+
+    if (total > 0) {
+      categoryLabels.push(`<text x="${x + barWidth / 2}" y="${margin.top + innerHeight - stackedHeight - 10}" text-anchor="middle" font-size="12" font-weight="700" fill="#18324d">${total}</text>`);
+    }
+
+    categoryLabels.push(`<text x="${x + barWidth / 2}" y="${height - 22}" text-anchor="middle" font-size="13px" font-weight="800" fill="#18324d">${escapeHtml(category)}</text>`);
+  });
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
+    ${gridLines.join('')}
+    ${axisLine}
+    ${bars.join('')}
+    ${yLabels.join('')}
+    ${categoryLabels.join('')}
+  `;
+}
+
+function render(data){
+  const livePill = document.getElementById('livePill');
+  const statusText = document.getElementById('statusText');
+  const banner = document.getElementById('errorBanner');
+  const emptyState = document.getElementById('emptyState');
+  const chartSvg = document.getElementById('chartSvg');
+
+  if(data.status === 'ok'){
+    livePill.classList.remove('erro');
+    statusText.textContent = 'ao vivo';
+    banner.style.display = 'none';
+  } else if(data.status === 'erro'){
+    livePill.classList.add('erro');
+    statusText.textContent = 'erro na coleta';
+    banner.style.display = 'block';
+    banner.textContent = '⚠ Erro ao abrir dados: ' + (data.error_message || 'desconhecido');
+  } else {
+    statusText.textContent = 'conectando…';
+    banner.style.display = 'none';
+  }
+
+  document.getElementById('updatedAt').textContent = data.updated_at ? new Date(data.updated_at).toLocaleString('pt-BR') : '—';
+
+  const categories = data.categories || [];
+  const series = data.series || [];
+
+  if (categories.length === 0 || series.length === 0){
+    chartSvg.style.display = 'none';
+    emptyState.style.display = 'block';
+    document.getElementById('totalCount').textContent = '0 incidências';
+    document.getElementById('legendRow').innerHTML = '';
+    chartSvg.innerHTML = '';
+    return;
+  }
+
+  chartSvg.style.display = 'block';
+  emptyState.style.display = 'none';
+
+  const datasets = buildDatasets(series, categories.length);
+  let grandTotal = 0;
+  datasets.forEach(d => d.data.forEach(v => { grandTotal += (v || 0); }));
+  document.getElementById('totalCount').textContent = grandTotal + ' incidências';
+
+  renderLegend(datasets);
+  renderChart(categories, datasets);
+}
+
+async function fetchData(){
+  try{
+    const res = await fetch(DATA_PATH, {cache:'no-store'});
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data);
+  }catch(e){
+    console.error('Falha ao buscar dados', e);
+    const banner = document.getElementById('errorBanner');
+    banner.style.display = 'block';
+    banner.textContent = '⚠ Falha ao carregar dados: ' + (e.message || 'desconhecido');
+  }
+}
+
+fetchData();
+setInterval(fetchData, 15000);
+</script>
+</body>
+</html>
