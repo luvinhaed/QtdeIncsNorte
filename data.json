@@ -1,21 +1,19 @@
 {
-  "updated_at": "2026-08-14T02:28:53",
+  "updated_at": "2026-08-14T02:45:37",
   "categories": [
     "TIANGUÁ",
-    "SOBRAL",
-    "CAMOCIM"
+    "SOBRAL"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
         5,
-        15,
-        1
+        14
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-14T02:28:53"
+  "last_success_at": "2026-08-14T02:45:37"
 }
