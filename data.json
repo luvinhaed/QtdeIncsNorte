@@ -1,11 +1,10 @@
 {
-  "updated_at": "2026-08-19T03:57:14",
+  "updated_at": "2026-08-19T04:13:59",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
     "SOBRAL",
-    "CAMOCIM",
-    "SÃO BENEDITO"
+    "CAMOCIM"
   ],
   "series": [
     {
@@ -14,8 +13,7 @@
         0,
         0,
         1,
-        0,
-        1
+        0
       ]
     },
     {
@@ -24,7 +22,6 @@
         0,
         0,
         1,
-        0,
         0
       ]
     },
@@ -34,12 +31,11 @@
         4,
         7,
         13,
-        1,
-        0
+        1
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-19T03:57:14"
+  "last_success_at": "2026-08-19T04:13:59"
 }
