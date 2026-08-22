@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T05:22:26",
+  "updated_at": "2026-08-22T05:39:10",
   "categories": [
     "TIANGUÁ",
     "CAMOCIM"
@@ -16,11 +16,11 @@
       "name": "BT",
       "data": [
         3,
-        1
+        0
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-22T05:22:26"
+  "last_success_at": "2026-08-22T05:39:10"
 }
