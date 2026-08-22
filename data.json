@@ -1,26 +1,17 @@
 {
-  "updated_at": "2026-08-22T05:39:10",
+  "updated_at": "2026-08-22T05:55:55",
   "categories": [
-    "TIANGUÁ",
-    "CAMOCIM"
+    "TIANGUÁ"
   ],
   "series": [
     {
-      "name": "MT RAMAL",
-      "data": [
-        0,
-        1
-      ]
-    },
-    {
       "name": "BT",
       "data": [
-        3,
-        0
+        2
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-22T05:39:10"
+  "last_success_at": "2026-08-22T05:55:55"
 }
