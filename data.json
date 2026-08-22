@@ -1,17 +1,19 @@
 {
-  "updated_at": "2026-08-22T07:02:51",
+  "updated_at": "2026-08-22T07:19:34",
   "categories": [
+    "INHUÇU",
     "TIANGUÁ"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
-        3
+        1,
+        4
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-22T07:02:51"
+  "last_success_at": "2026-08-22T07:19:34"
 }
