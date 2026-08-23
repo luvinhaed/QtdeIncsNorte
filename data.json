@@ -1,26 +1,19 @@
 {
-  "updated_at": "2026-08-23T05:05:24",
+  "updated_at": "2026-08-23T05:22:08",
   "categories": [
     "INHUÇU",
     "CAMOCIM"
   ],
   "series": [
     {
-      "name": "MT RAMAL",
-      "data": [
-        0,
-        1
-      ]
-    },
-    {
       "name": "BT",
       "data": [
         2,
-        3
+        2
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-23T05:05:24"
+  "last_success_at": "2026-08-23T05:22:08"
 }
