@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T03:41:44",
+  "updated_at": "2026-08-23T03:58:28",
   "categories": [
     "INHUÇU",
     "SOBRAL",
@@ -19,11 +19,11 @@
       "data": [
         2,
         1,
-        1
+        2
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-23T03:41:44"
+  "last_success_at": "2026-08-23T03:58:28"
 }
