@@ -1,17 +1,19 @@
 {
-  "updated_at": "2026-08-24T02:34:20",
+  "updated_at": "2026-08-24T02:51:04",
   "categories": [
+    "INHUÇU",
     "SOBRAL"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
-        5
+        1,
+        4
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-24T02:34:20"
+  "last_success_at": "2026-08-24T02:51:04"
 }
