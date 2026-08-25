@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T19:02:18",
+  "updated_at": "2026-08-25T19:19:05",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
@@ -8,25 +8,16 @@
   ],
   "series": [
     {
-      "name": "MT TRONCO",
-      "data": [
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "BT",
       "data": [
-        15,
-        11,
-        85,
+        14,
+        12,
+        60,
         11
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-25T19:02:18"
+  "last_success_at": "2026-08-25T19:19:05"
 }
