@@ -1,8 +1,7 @@
 {
-  "updated_at": "2026-08-26T01:44:35",
+  "updated_at": "2026-08-26T02:01:21",
   "categories": [
     "INHUÇU",
-    "TIANGUÁ",
     "SOBRAL",
     "CAMOCIM"
   ],
@@ -10,7 +9,6 @@
     {
       "name": "MT TRONCO",
       "data": [
-        0,
         0,
         1,
         0
@@ -20,13 +18,12 @@
       "name": "BT",
       "data": [
         2,
-        1,
-        35,
+        29,
         5
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-26T01:44:35"
+  "last_success_at": "2026-08-26T02:01:21"
 }
