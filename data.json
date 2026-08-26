@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T04:32:26",
+  "updated_at": "2026-08-26T04:49:14",
   "categories": [
     "INHUÇU",
     "SOBRAL",
@@ -7,9 +7,17 @@
   ],
   "series": [
     {
-      "name": "BT",
+      "name": "MT RAMAL",
       "data": [
         1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "BT",
+      "data": [
+        0,
         17,
         1
       ]
@@ -17,5 +25,5 @@
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-26T04:32:26"
+  "last_success_at": "2026-08-26T04:49:14"
 }
