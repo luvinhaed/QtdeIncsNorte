@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T17:23:58",
+  "updated_at": "2026-08-27T17:40:43",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
@@ -8,6 +8,16 @@
     "SÃO BENEDITO"
   ],
   "series": [
+    {
+      "name": "MT TRONCO",
+      "data": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
     {
       "name": "MT RAMAL",
       "data": [
@@ -23,13 +33,13 @@
       "data": [
         7,
         19,
-        10,
-        25,
+        12,
+        22,
         1
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-27T17:23:58"
+  "last_success_at": "2026-08-27T17:40:43"
 }
