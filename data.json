@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T16:50:58",
+  "updated_at": "2026-08-31T17:07:46",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
@@ -19,23 +19,23 @@
     {
       "name": "MT RAMAL",
       "data": [
+        1,
         0,
         0,
-        0,
-        1
+        0
       ]
     },
     {
       "name": "BT",
       "data": [
-        25,
+        26,
         13,
-        22,
-        18
+        20,
+        16
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-08-31T16:50:58"
+  "last_success_at": "2026-08-31T17:07:46"
 }
