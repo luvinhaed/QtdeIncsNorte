@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T20:16:48",
+  "updated_at": "2026-09-02T20:33:42",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
@@ -8,16 +8,6 @@
     "SÃO BENEDITO"
   ],
   "series": [
-    {
-      "name": "MT RAMAL",
-      "data": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
-    },
     {
       "name": "BT",
       "data": [
@@ -31,5 +21,5 @@
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-02T20:16:48"
+  "last_success_at": "2026-09-02T20:33:42"
 }
