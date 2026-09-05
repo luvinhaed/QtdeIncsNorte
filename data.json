@@ -1,23 +1,17 @@
 {
-  "updated_at": "2026-09-05T05:06:43",
+  "updated_at": "2026-09-05T05:23:27",
   "categories": [
     "SOBRAL"
   ],
   "series": [
     {
-      "name": "MT RAMAL",
-      "data": [
-        1
-      ]
-    },
-    {
       "name": "BT",
       "data": [
-        4
+        3
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-05T05:06:43"
+  "last_success_at": "2026-09-05T05:23:27"
 }
