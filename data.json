@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-09-05T07:54:06",
+  "updated_at": "2026-09-05T08:10:50",
   "categories": [
+    "INHUÇU",
     "TIANGUÁ",
     "SOBRAL"
   ],
@@ -9,11 +10,12 @@
       "name": "BT",
       "data": [
         1,
-        7
+        1,
+        6
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-05T07:54:06"
+  "last_success_at": "2026-09-05T08:10:50"
 }
