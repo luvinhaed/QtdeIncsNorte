@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T02:19:26",
+  "updated_at": "2026-09-05T02:36:10",
   "categories": [
     "SOBRAL",
     "CAMOCIM"
@@ -8,7 +8,7 @@
     {
       "name": "MT RAMAL",
       "data": [
-        3,
+        2,
         0
       ]
     },
@@ -16,11 +16,11 @@
       "name": "BT",
       "data": [
         6,
-        2
+        1
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-05T02:19:26"
+  "last_success_at": "2026-09-05T02:36:10"
 }
