@@ -1,19 +1,21 @@
 {
-  "updated_at": "2026-09-12T04:16:11",
+  "updated_at": "2026-09-12T04:32:55",
   "categories": [
     "INHUÇU",
+    "TIANGUÁ",
     "CAMOCIM"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
-        5,
+        4,
+        1,
         2
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-12T04:16:11"
+  "last_success_at": "2026-09-12T04:32:55"
 }
