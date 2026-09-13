@@ -1,20 +1,15 @@
 {
-  "updated_at": "2026-09-13T03:08:34",
+  "updated_at": "2026-09-13T03:25:25",
   "categories": [
     "INHUÇU",
+    "SOBRAL",
     "CAMOCIM"
   ],
   "series": [
     {
-      "name": "MT TRONCO",
-      "data": [
-        0,
-        1
-      ]
-    },
-    {
       "name": "BT",
       "data": [
+        1,
         1,
         12
       ]
@@ -22,5 +17,5 @@
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-13T03:08:34"
+  "last_success_at": "2026-09-13T03:25:25"
 }
