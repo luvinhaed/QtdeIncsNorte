@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T02:35:07",
+  "updated_at": "2026-09-13T02:51:51",
   "categories": [
     "INHUÇU",
     "SOBRAL",
@@ -7,15 +7,23 @@
   ],
   "series": [
     {
+      "name": "MT TRONCO",
+      "data": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "BT",
       "data": [
         1,
         1,
-        14
+        12
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-13T02:35:07"
+  "last_success_at": "2026-09-13T02:51:51"
 }
