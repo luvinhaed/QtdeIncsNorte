@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T00:54:12",
+  "updated_at": "2026-09-14T01:10:56",
   "categories": [
     "TIANGUÁ",
     "SOBRAL",
@@ -7,23 +7,15 @@
   ],
   "series": [
     {
-      "name": "MT TRONCO",
-      "data": [
-        1,
-        0,
-        0
-      ]
-    },
-    {
       "name": "BT",
       "data": [
-        6,
-        3,
+        4,
+        2,
         3
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-14T00:54:12"
+  "last_success_at": "2026-09-14T01:10:56"
 }
