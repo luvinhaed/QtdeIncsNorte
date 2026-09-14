@@ -1,7 +1,8 @@
 {
-  "updated_at": "2026-09-13T22:40:20",
+  "updated_at": "2026-09-13T22:57:05",
   "categories": [
     "TIANGUÁ",
+    "SOBRAL",
     "CAMOCIM"
   ],
   "series": [
@@ -9,6 +10,7 @@
       "name": "MT RAMAL",
       "data": [
         1,
+        0,
         0
       ]
     },
@@ -16,11 +18,12 @@
       "name": "BT",
       "data": [
         6,
+        2,
         6
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-13T22:40:20"
+  "last_success_at": "2026-09-13T22:57:05"
 }
