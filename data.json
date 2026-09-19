@@ -1,21 +1,23 @@
 {
-  "updated_at": "2026-09-19T06:08:28",
+  "updated_at": "2026-09-19T06:25:12",
   "categories": [
     "INHUÇU",
     "SOBRAL",
-    "CAMOCIM"
+    "CAMOCIM",
+    "SÃO BENEDITO"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
-        3,
-        12,
-        7
+        2,
+        14,
+        8,
+        1
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-09-19T06:08:28"
+  "last_success_at": "2026-09-19T06:25:12"
 }
