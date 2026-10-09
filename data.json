@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-10-09T05:11:03",
+  "updated_at": "2026-10-09T05:27:47",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
-    "SOBRAL"
+    "SOBRAL",
+    "CAMOCIM"
   ],
   "series": [
     {
@@ -11,7 +12,8 @@
       "data": [
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -19,7 +21,8 @@
       "data": [
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -27,11 +30,12 @@
       "data": [
         2,
         2,
-        10
+        9,
+        1
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-10-09T05:11:03"
+  "last_success_at": "2026-10-09T05:27:47"
 }
