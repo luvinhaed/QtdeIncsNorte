@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T23:41:02",
+  "updated_at": "2026-10-25T23:57:46",
   "categories": [
     "SOBRAL",
     "CAMOCIM"
@@ -9,11 +9,11 @@
       "name": "BT",
       "data": [
         5,
-        10
+        9
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-10-25T23:41:02"
+  "last_success_at": "2026-10-25T23:57:46"
 }
