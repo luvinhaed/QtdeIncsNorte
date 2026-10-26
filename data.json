@@ -1,19 +1,17 @@
 {
-  "updated_at": "2026-10-26T02:28:23",
+  "updated_at": "2026-10-26T02:45:07",
   "categories": [
-    "SOBRAL",
     "CAMOCIM"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
-        1,
         6
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-10-26T02:28:23"
+  "last_success_at": "2026-10-26T02:45:07"
 }
