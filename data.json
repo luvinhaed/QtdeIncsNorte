@@ -1,19 +1,26 @@
 {
-  "updated_at": "2026-10-27T02:12:00",
+  "updated_at": "2026-10-27T02:28:45",
   "categories": [
     "TIANGUÁ",
     "SOBRAL"
   ],
   "series": [
     {
+      "name": "MT RAMAL",
+      "data": [
+        0,
+        1
+      ]
+    },
+    {
       "name": "BT",
       "data": [
         1,
-        16
+        15
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-10-27T02:12:00"
+  "last_success_at": "2026-10-27T02:28:45"
 }
