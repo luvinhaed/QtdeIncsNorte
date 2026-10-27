@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T03:52:33",
+  "updated_at": "2026-10-27T04:09:17",
   "categories": [
     "SOBRAL"
   ],
@@ -7,11 +7,11 @@
     {
       "name": "BT",
       "data": [
-        12
+        10
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-10-27T03:52:33"
+  "last_success_at": "2026-10-27T04:09:17"
 }
