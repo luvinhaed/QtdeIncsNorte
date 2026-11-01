@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T05:25:42",
+  "updated_at": "2026-11-01T05:42:26",
   "categories": [
     "INHUÇU",
     "CAMOCIM"
@@ -9,11 +9,11 @@
       "name": "BT",
       "data": [
         1,
-        6
+        4
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-01T05:25:42"
+  "last_success_at": "2026-11-01T05:42:26"
 }
