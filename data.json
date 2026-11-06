@@ -1,23 +1,29 @@
 {
-  "updated_at": "2026-11-06T02:03:48",
+  "updated_at": "2026-11-06T02:20:32",
   "categories": [
-    "INHUÇU",
     "TIANGUÁ",
     "SOBRAL",
     "CAMOCIM"
   ],
   "series": [
     {
+      "name": "MT RAMAL",
+      "data": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "name": "BT",
       "data": [
         1,
-        1,
-        14,
-        13
+        13,
+        11
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-06T02:03:48"
+  "last_success_at": "2026-11-06T02:20:32"
 }
