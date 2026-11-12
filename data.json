@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T15:31:22",
+  "updated_at": "2026-11-12T15:48:07",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
@@ -8,19 +8,10 @@
   ],
   "series": [
     {
-      "name": "MT TRONCO",
-      "data": [
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
       "name": "MT RAMAL",
       "data": [
-        2,
-        0,
+        1,
+        1,
         0,
         0
       ]
@@ -28,14 +19,14 @@
     {
       "name": "BT",
       "data": [
+        18,
         19,
-        17,
-        31,
-        14
+        32,
+        15
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-12T15:31:22"
+  "last_success_at": "2026-11-12T15:48:07"
 }
