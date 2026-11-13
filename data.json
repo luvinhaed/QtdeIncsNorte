@@ -1,21 +1,19 @@
 {
-  "updated_at": "2026-11-13T04:38:34",
+  "updated_at": "2026-11-13T04:55:19",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
     "SOBRAL",
-    "CAMOCIM",
-    "SÃO BENEDITO"
+    "CAMOCIM"
   ],
   "series": [
     {
       "name": "MT TRONCO",
       "data": [
         0,
+        1,
         0,
-        0,
-        0,
-        1
+        0
       ]
     },
     {
@@ -24,22 +22,20 @@
         1,
         0,
         2,
-        1,
-        0
+        1
       ]
     },
     {
       "name": "BT",
       "data": [
         2,
+        3,
         2,
-        2,
-        7,
-        0
+        7
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-13T04:38:34"
+  "last_success_at": "2026-11-13T04:55:19"
 }
