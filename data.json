@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T20:01:07",
+  "updated_at": "2026-11-15T20:17:51",
   "categories": [
     "TIANGUÁ",
     "SOBRAL",
@@ -7,15 +7,23 @@
   ],
   "series": [
     {
+      "name": "MT RAMAL",
+      "data": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "name": "BT",
       "data": [
         6,
-        7,
+        5,
         8
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-15T20:01:07"
+  "last_success_at": "2026-11-15T20:17:51"
 }
