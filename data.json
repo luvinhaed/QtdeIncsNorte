@@ -1,17 +1,19 @@
 {
-  "updated_at": "2026-11-16T04:06:26",
+  "updated_at": "2026-11-16T04:23:09",
   "categories": [
+    "INHUÇU",
     "CAMOCIM"
   ],
   "series": [
     {
       "name": "BT",
       "data": [
+        1,
         1
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-16T04:06:26"
+  "last_success_at": "2026-11-16T04:23:09"
 }
