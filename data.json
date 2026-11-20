@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:35:19",
+  "updated_at": "2026-11-20T15:52:05",
   "categories": [
     "INHUÇU",
     "TIANGUÁ",
@@ -21,9 +21,9 @@
     {
       "name": "BT",
       "data": [
-        10,
+        11,
         8,
-        24,
+        23,
         12,
         1
       ]
@@ -31,5 +31,5 @@
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-20T15:35:19"
+  "last_success_at": "2026-11-20T15:52:05"
 }
