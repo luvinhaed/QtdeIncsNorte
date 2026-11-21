@@ -1,8 +1,7 @@
 {
-  "updated_at": "2026-11-21T06:39:26",
+  "updated_at": "2026-11-21T06:56:10",
   "categories": [
     "INHUÇU",
-    "TIANGUÁ",
     "SOBRAL",
     "CAMOCIM"
   ],
@@ -12,7 +11,6 @@
       "data": [
         0,
         0,
-        0,
         1
       ]
     },
@@ -20,13 +18,12 @@
       "name": "BT",
       "data": [
         2,
-        1,
-        9,
-        1
+        10,
+        3
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-21T06:39:26"
+  "last_success_at": "2026-11-21T06:56:10"
 }
