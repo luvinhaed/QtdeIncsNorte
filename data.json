@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T03:52:07",
+  "updated_at": "2026-11-21T04:08:50",
   "categories": [
     "TIANGUÁ",
     "SOBRAL",
@@ -10,12 +10,12 @@
       "name": "BT",
       "data": [
         1,
-        14,
+        12,
         3
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-21T03:52:07"
+  "last_success_at": "2026-11-21T04:08:50"
 }
