@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-11-23T04:12:21",
+  "updated_at": "2026-11-23T04:29:05",
   "categories": [
+    "TIANGUÁ",
     "SOBRAL",
     "CAMOCIM"
   ],
@@ -8,6 +9,7 @@
     {
       "name": "MT TRONCO",
       "data": [
+        0,
         1,
         0
       ]
@@ -15,6 +17,7 @@
     {
       "name": "MT RAMAL",
       "data": [
+        0,
         1,
         0
       ]
@@ -23,11 +26,12 @@
       "name": "BT",
       "data": [
         1,
-        5
+        1,
+        4
       ]
     }
   ],
   "status": "ok",
   "error_message": null,
-  "last_success_at": "2026-11-23T04:12:21"
+  "last_success_at": "2026-11-23T04:29:05"
 }
